@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SecondScreenViewController.h"
 @interface ViewController : UIViewController
 
+-(void) alert:(NSString *)text;
 
 @end
 

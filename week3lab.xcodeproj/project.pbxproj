@@ -14,6 +14,7 @@
 		8A0F24981ADA5A21006E834A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0F24971ADA5A21006E834A /* Images.xcassets */; };
 		8A0F249B1ADA5A21006E834A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0F24991ADA5A21006E834A /* LaunchScreen.xib */; };
 		8A0F24A71ADA5A21006E834A /* week3labTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F24A61ADA5A21006E834A /* week3labTests.m */; };
+		8A0F24B51ADA5D31006E834A /* SecondScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F24B41ADA5D31006E834A /* SecondScreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8A0F24A01ADA5A21006E834A /* week3labTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = week3labTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0F24A51ADA5A21006E834A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A0F24A61ADA5A21006E834A /* week3labTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = week3labTests.m; sourceTree = "<group>"; };
+		8A0F24B31ADA5D31006E834A /* SecondScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenViewController.h; sourceTree = "<group>"; };
+		8A0F24B41ADA5D31006E834A /* SecondScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				8A0F24971ADA5A21006E834A /* Images.xcassets */,
 				8A0F24991ADA5A21006E834A /* LaunchScreen.xib */,
 				8A0F248A1ADA5A21006E834A /* Supporting Files */,
+				8A0F24B31ADA5D31006E834A /* SecondScreenViewController.h */,
+				8A0F24B41ADA5D31006E834A /* SecondScreenViewController.m */,
 			);
 			path = week3lab;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				8A0F24931ADA5A21006E834A /* ViewController.m in Sources */,
 				8A0F24901ADA5A21006E834A /* AppDelegate.m in Sources */,
+				8A0F24B51ADA5D31006E834A /* SecondScreenViewController.m in Sources */,
 				8A0F248D1ADA5A21006E834A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
