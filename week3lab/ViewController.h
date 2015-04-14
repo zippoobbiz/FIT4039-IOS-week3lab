@@ -11,6 +11,6 @@
 @interface ViewController : UIViewController
 
 -(void) alert:(NSString *)text;
-
+-(NSString*) firstLetterToUpperCase:(NSString *) text;
 @end
 

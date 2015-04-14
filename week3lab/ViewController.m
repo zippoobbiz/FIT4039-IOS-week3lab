@@ -31,16 +31,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(NSString*) firstLetterToUpperCase:(NSString *) text
+{
+    NSString* formattedText = [text lowercaseString];
+    formattedText = [[[formattedText substringToIndex:1] uppercaseString] stringByAppendingString:[formattedText substringFromIndex:1]];
+    return formattedText;
+}
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"generateNemName"])
     {
         SecondScreenViewController * controller = segue.destinationViewController;
         
-        NSString * newfirstname = [NSString stringWithFormat: @"%@%@",[self.firstNameTextField.text substringWithRange:NSMakeRange(0,3)],[self.lastNameTextField.text substringWithRange:NSMakeRange(0,2)]];
+        NSString * newfirstname = [self firstLetterToUpperCase:[NSString stringWithFormat: @"%@%@",[self.firstNameTextField.text substringWithRange:NSMakeRange(0,3)],[self.lastNameTextField.text substringWithRange:NSMakeRange(0,2)]]];
         
-        NSString * newlastname = [NSString stringWithFormat:@"%@%@",[self.motherNameTextField.text substringWithRange:NSMakeRange(0, 2)],[self.birthCityTextField.text substringWithRange:NSMakeRange(0, 3)]];
+        NSString * newlastname = [self firstLetterToUpperCase:[NSString stringWithFormat:@"%@%@",[self.motherNameTextField.text substringWithRange:NSMakeRange(0, 2)],[self.birthCityTextField.text substringWithRange:NSMakeRange(0, 3)]]];
         
-        NSString * planetname = [NSString stringWithFormat:@"%@%@",[self.lastNameTextField.text substringWithRange:NSMakeRange(self.lastNameTextField.text.length - 2, 2)],self.firstCarTextField.text];
+        NSString * planetname = [self firstLetterToUpperCase:[NSString stringWithFormat:@"%@%@",[self.lastNameTextField.text substringWithRange:NSMakeRange(self.lastNameTextField.text.length - 2, 2)],self.firstCarTextField.text]];
 
         controller.generatedName = [NSString stringWithFormat:@"%@ %@ of %@", newfirstname,newlastname,planetname];
     }
